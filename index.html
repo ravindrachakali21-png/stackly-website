@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stackly</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+   <style>
+    html {
+  scroll-behavior: smooth;
+}
+
+    body {
+       background-image: url("https://cdn.pixabay.com/photo/2023/07/23/07/43/ai-8144729_1280.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.55);
+    }
+    .CCC{
+      display: flex;
+      flex-wrap: wrap;
+      align-content:space-between;
+      height: 1800;
+      border: 3px solid black;
+      gap: 10px;
+    }
+    .container2{
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      padding-top: 60px;
+      padding-left: 50px;
+      padding: 30px 40px 40px 40px;
+      margin: 10px 10px 10px 10px;
+      margin-top: 50px;
+      margin-left: 50px;
+      border: 3px solid black;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      font-size: large;
+      color: white;
+      
+    }
+    .container3{
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      padding-top: 60px;
+      padding-left: 50px;
+      padding: 30px 40px 40px 40px;
+      margin: 50px 30px 60px 20px;
+      margin-top: 50px;
+      margin-left: 50px;
+      border: 3px solid black;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      font-size: large;
+      color: white;
+    }
+    .container4{
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      padding-top: 60px;
+      padding-left: 50px;
+      padding: 30px 40px 40px 40px;
+      margin: 50px 30px 60px 20px;
+      margin-top: 50px;
+      margin-left: 50px;
+      border: 3px solid black;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      font-size: large;
+      color: white;
+
+    }
+    .container5{
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      padding-top: 20px;
+      padding-left: 50px;
+      padding: 30px 40px 40px 40px;
+      margin: 50px 30px 60px 20px;
+      margin-top: 50px;
+      margin-left: 50px;
+      border: 3px solid black;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      font-size: large;
+      color: white;
+
+    }
+    .container6{
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      padding-top: 60px;
+      padding-left: 50px;
+      padding: 30px 40px 40px 40px;
+      margin: 50px 30px 60px 20px;
+      margin-top: 50px;
+      margin-left: 50px;
+      border: 3px solid black;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      font-size: large;
+      color: white;
+
+    }
+    .container7{
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      padding-top: 60px;
+      padding-left: 50px;
+      padding: 30px 40px 40px 40px;
+      margin: 50px 30px 60px 20px;
+      margin-top: 50px;
+      margin-left: 50px;
+      border: 3px solid black;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      font-size: large;
+      color: white;
+
+    }
+  </style>
+</head>
+</head>
+<body>
+  <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <div class="flex items-center gap-2">
+        <div class="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-indigo-600 to-pink-500 text-white font-bold rounded-lg">
+          S
+        </div>
+        <h1 class="text-xl font-semibold text-gray-800">Stackly</h1>
+      </div>
+
+      
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#home" class="hover:text-indigo-600 transition-colors">Home</a>
+        <a href="#services" class="hover:text-indigo-600 transition-colors">Services</a>
+        <a href="#about" class="hover:text-indigo-600 transition-colors">About</a>
+                <a href="#help" class="hover:text-indigo-600 transition-colors">Help</a>
+
+        <button class="ml-4 px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm hover:bg-indigo-700 transition">
+          Get Started
+        </button>
+      </nav>
+
+     
+      <button
+        class="md:hidden p-2 border rounded-lg text-gray-600 hover:bg-gray-100"
+        onclick="toggleMenu()"
+      >
+        ☰
+      </button>
+    </div>
+
+    
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner border-t">
+      <nav class="flex flex-col text-center py-3 space-y-2 text-gray-700">
+        <a href="#features" onclick="toggleMenu()">Features</a>
+        <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <button
+          onclick="toggleMenu()"
+          class="mx-auto mt-2 px-4 py-2 bg-indigo-600 text-white rounded-lg"
+        >
+          Get Started
+        </button>
+      </nav>
+      <img src="https://www.vecteezy.com/photo/36791263-ai-generated-global-urban-city-light-up-in-the-night-city-animation">
+    </div>
+  </header>
+  
+  <section class="flex flex-col md:flex-row-reverse items-center justify-center py-20 px-8  gap-10">
+  
+  <div class="md:w-1/2 flex justify-center">
+    <img 
+    src="https://share.google/images/2dAqAsWQKWWVuVsPT"
+      alt="AI Technology Illustration"
+      class="rounded-2xl shadow-lg w-full max-w-md object-cover"
+    />
+  </div>
+  <div class="container" style="padding-top: 100px; width: 750px;padding-left: 70px;">
+    <p style="font-size: large;"><b>"Stackly is a forward-thinking technology company dedicated to driving digital transformation."</b><br></p>
+<p style="padding-top: 10px;"><i>We design intelligent, scalable solutions powered by AI and cloud innovation.
+Our mission is to empower businesses with cutting-edge tools for smarter growth.
+With a passion for innovation and precision, we turn complex ideas into seamless experiences.
+At Stackly, technology meets creativity to shape the future of tomorrow.<br>
+</i></p>
+<p style="padding-top: 20px;padding-left: 40px;"><b>💡 “Innovating today to define tomorrow’s digital world.”</b>
+</p>
+  </div>
+  </section>
+
+  
+<h1 class="text-3xl font-bold text-center text-white mt-12 mb-8" style="color: darkorchid;">We Are Providing =></h1>
+
+
+<section class="flex flex-wrap justify-center gap-6">
+  <div class="container2">
+    <h2><b>0.1 Digital Marketing 🌐</b></h2><br>
+    <p><i>"Stackly’s digital marketing solutions combine strategy, creativity, and technology to elevate brands.”</i></p>
+  </div>
+
+  <div class="container3">
+    <h2><b>0.2 AI and Automation🤖</b></h2><br>
+    <p><i>"We leverage artificial intelligence and automation to streamline operations and boost efficiency.”</i></p>
+  </div>
+
+  <div class="container4">
+    <h2><b>0.3 Web Development 💡</b></h2><br>
+    <p><i>"We build fast, scalable, and responsive web solutions tailored to your business goals.”</i></p>
+  </div>
+</section>
+
+
+<section class="flex flex-wrap justify-center gap-6 mt-10">
+  <div class="container5">
+    <h2><b>0.4 Mobile Application Development 📲</b></h2><br>
+    <p><i>"Delivering intuitive, high-performance mobile apps that connect your brand with users on the go.”</i></p>
+  </div>
+
+  <div class="container6">
+    <h2><b>0.5 Product Branding And Design🎯</b></h2><br>
+    <p><i>"We craft impactful brand identities that tell your story through design.
+Every detail reflects creativity, purpose, and lasting visual appeal."</i></p>
+  </div>
+
+  <div class="container7">
+    
+    <h2><b>0.6 Online Form Filling📝</b></h2><br>
+    <p><i>"Stackly’s digital marketing solutions combine strategy, creativity, and technology to elevate brands.”</i></p>
+  </div>
+</section>
+
+<section id="services" class="py-20 px-10 bg-black bg-opacity-70 text-white flex flex-col items-center justify-center">
+  <h1 class="text-4xl font-bold mb-8 text-yellow-400">Our Services</h1>
+  <p class="max-w-3xl text-center text-lg mb-12">
+    At <b>Stackly</b>, we provide a wide range of digital solutions designed to transform your ideas into high-impact business results.
+  </p>
+
+
+  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl">
+    
+    <div class="bg-gray-900 p-8 rounded-2xl shadow-xl hover:scale-105 transform transition">
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-3">🌐 Web Development</h2>
+      <p>
+        We build responsive, secure, and scalable websites customized to your business needs using the latest technologies.
+      </p>
+    </div>
+
+    <div class="bg-gray-900 p-8 rounded-2xl shadow-xl hover:scale-105 transform transition">
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-3">🤖 AI & Automation</h2>
+      <p>
+        Automate your workflows with intelligent solutions powered by AI and machine learning to save time and increase efficiency.
+      </p>
+    </div>
+
+    <div class="bg-gray-900 p-8 rounded-2xl shadow-xl hover:scale-105 transform transition">
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-3">📱 Mobile App Development</h2>
+      <p>
+        We design and develop user-friendly mobile apps that deliver seamless performance across Android and iOS devices.
+      </p>
+    </div>
+
+    <div class="bg-gray-900 p-8 rounded-2xl shadow-xl hover:scale-105 transform transition">
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-3">🎯 Digital Marketing</h2>
+      <p>
+        From SEO to social media campaigns, we help your brand reach the right audience and grow its online presence effectively.
+      </p>
+    </div>
+
+    <div class="bg-gray-900 p-8 rounded-2xl shadow-xl hover:scale-105 transform transition">
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-3">🎨 Product Branding & Design</h2>
+      <p>
+        Our creative design team helps you build a strong brand identity that stands out with unique visuals and storytelling.
+      </p>
+    </div>
+
+    <div class="bg-gray-900 p-8 rounded-2xl shadow-xl hover:scale-105 transform transition">
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-3">🧾 Online Form Filling</h2>
+      <p>
+        We simplify your online form-filling processes using digital automation tools to ensure accuracy and speed.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="flex flex-col items-center justify-center py-20 px-10 text-white bg-black bg-opacity-70">
+  <h1 class="text-4xl font-bold mb-6 text-yellow-400">About Us</h1>
+
+  <p class="max-w-3xl text-center text-lg mb-10">
+    At <b>Stackly</b>, we’re passionate about building intelligent, scalable, and modern technology solutions that empower businesses to thrive in the digital age.
+  </p>
+
+  <div class="max-w-4xl text-left space-y-6 bg-gray-900 p-10 rounded-2xl shadow-xl">
+    <div>
+      <h2 class="text-2xl text-indigo-400 font-semibold mb-2">Who We Are</h2>
+      <p>
+        Stackly is a forward-thinking company specializing in digital marketing, web and mobile development, and AI-powered automation.
+        We bring creativity and innovation together to help businesses adapt, grow, and succeed online.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl text-indigo-400 font-semibold mb-2">Our Mission</h2>
+      <p>
+        Our mission is to create technology that simplifies life and enhances business performance — blending innovation with practicality.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl text-indigo-400 font-semibold mb-2">Our Vision</h2>
+      <p>
+        To be a global leader in digital innovation, transforming ideas into seamless, impactful solutions that shape the future.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl text-indigo-400 font-semibold mb-2">Our Values</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Innovation and continuous learning</li>
+        <li>Integrity and transparency</li>
+        <li>Customer-first approach</li>
+        <li>Collaboration and teamwork</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="help" class="flex flex-col items-center justify-center py-20 px-10 text-white bg-black bg-opacity-70">
+  <h1 class="text-4xl font-bold mb-6 text-yellow-400">Help & Support</h1>
+  <p class="max-w-3xl text-center text-lg mb-10">
+    Welcome to Stackly Help Center! Find answers to common questions and learn how to make the most of our services.
+  </p>
+
+  <div class="max-w-4xl text-left space-y-6 bg-gray-900 p-10 rounded-2xl shadow-xl">
+    <div>
+      <h2 class="text-2xl text-indigo-400 font-semibold mb-2">Getting Started</h2>
+      <p>
+        If you’re new to Stackly, explore our Home and Services sections to learn about digital marketing, AI automation, and more.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl text-indigo-400 font-semibold mb-2">Frequently Asked Questions</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><b>How do I create an account?</b> — Click the “Get Started” button and fill in your details.</li>
+        <li><b>How can I reset my password?</b> — Use the “Forgot Password” option on the login page.</li>
+        <li><b>How do I contact support?</b> — Email us at <b>support@stackly.com</b>.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="text-2xl text-indigo-400 font-semibold mb-2">Contact Us</h2>
+      <p>
+        Still need help? Reach us at <b>support@stackly.com</b> or call <b>+91 98765 43210</b>.
+      </p>
+    </div>
+  </div>
+</section>
+
+  
+
+</div>
+</body>
+</html>
