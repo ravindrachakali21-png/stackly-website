@@ -71,23 +71,37 @@ function App() {
       </section>
 
       {/* Software Solutions Section with Animation */}
-      <section id="software-solutions" className="software-solutions-section">
-        <h1 className="section-title">Our Software Solutions</h1>
-        <div className="solutions-cards">
-          <div className="solution-card fade-in">
-            <h2>Custom Enterprise Software</h2>
-            <p>Tailored solutions to optimize enterprise processes with scalability and security.</p>
-          </div>
-          <div className="solution-card fade-in delay-1">
-            <h2>Cloud Migration</h2>
-            <p>Seamlessly move your infrastructure to the cloud with minimal downtime.</p>
-          </div>
-          <div className="solution-card fade-in delay-2">
-            <h2>AI-Powered Analytics</h2>
-            <p>Unlock insights with advanced AI analytics for data-driven decision making.</p>
-          </div>
-        </div>
-      </section>
+      {/* --- Software Innovations Section --- */}
+<section id="software-innovations" className="software-innovations-section">
+  <h1 className="section-heading">Our Tech Innovations</h1>
+  <p className="section-subtext">
+    Empowering the future through AI-driven, cloud-ready, and scalable software solutions.
+  </p>
+
+  <div className="innovation-cards">
+    <div className="innovation-card fade-in">
+      <h2>🤖 AI Integration</h2>
+      <p>
+        Transform your business with intelligent AI models that automate workflows and enhance decisions.
+      </p>
+    </div>
+
+    <div className="innovation-card fade-in delay-1">
+      <h2>☁️ Cloud Transformation</h2>
+      <p>
+        Seamlessly migrate and scale your operations with secure, high-performance cloud infrastructure.
+      </p>
+    </div>
+
+    <div className="innovation-card fade-in delay-2">
+      <h2>⚙️ Robotic Automation</h2>
+      <p>
+        Drive efficiency with smart robotic process automation for repetitive and time-consuming tasks.
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Existing Services Cards */}
       <h1 className="section-title">We Are Providing =</h1>
