@@ -207,4 +207,106 @@ body {
   line-height: 1.6;
   text-align: center;
 }
+/* SOFTWARE INNOVATIONS SECTION */
+.software-innovations-section {
+  background: linear-gradient(135deg, #5b00a5, #8a2be2);
+  padding: 80px 20px;
+  border-radius: 20px;
+  margin: 60px auto;
+  text-align: center;
+  color: #fff;
+  width: 90%;
+  max-width: 1300px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.section-heading {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #f5e7ff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.section-subtext {
+  font-size: 1.1rem;
+  color: #e0d3ff;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+.innovation-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.innovation-card {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 300px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.innovation-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+.innovation-card h2 {
+  color: #ffe6ff;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.innovation-card p {
+  color: #f1e8ff;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+
+.delay-2 {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .innovation-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .software-innovations-section {
+    padding: 60px 15px;
+  }
+}
 
